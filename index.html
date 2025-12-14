@@ -5,47 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sanotech Admin Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100 min-h-screen">
   <div class="container mx-auto p-8">
     <h1 class="text-4xl font-bold text-center text-indigo-700 mb-10">Sanotech Admin Dashboard</h1>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-      <!-- کارت‌های آمار -->
-      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
-        <h2 class="text-2xl font-bold text-gray-800">کاربران</h2>
-        <p class="text-4xl font-bold text-indigo-600 mt-4">1,234</p>
+    <!-- کارت‌های آمار -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+        <h2 class="text-xl font-bold text-gray-600">کاربران فعال</h2>
+        <p class="text-5xl font-bold text-indigo-600 mt-4">1,234</p>
       </div>
-      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
-        <h2 class="text-2xl font-bold text-gray-800">سفارشات</h2>
-        <p class="text-4xl font-bold text-green-600 mt-4">567</p>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+        <h2 class="text-xl font-bold text-gray-600">سفارشات امروز</h2>
+        <p class="text-5xl font-bold text-green-600 mt-4">89</p>
       </div>
-      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
-        <h2 class="text-2xl font-bold text-gray-800">درآمد</h2>
-        <p class="text-4xl font-bold text-blue-600 mt-4">۱۲۳ میلیون</p>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+        <h2 class="text-xl font-bold text-gray-600">درآمد ماه</h2>
+        <p class="text-5xl font-bold text-blue-600 mt-4">۱۲۳ میلیون</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
+        <h2 class="text-xl font-bold text-gray-600">تیکت‌های باز</h2>
+        <p class="text-5xl font-bold text-red-600 mt-4">12</p>
       </div>
     </div>
 
-    <div class="bg-white rounded-xl shadow-lg p-8">
+    <!-- جدول آخرین فعالیت‌ها -->
+    <div class="bg-white rounded-2xl shadow-lg p-8">
       <h2 class="text-2xl font-bold mb-6">آخرین فعالیت‌ها</h2>
-      <table class="w-full text-right">
-        <thead>
-          <tr class="border-b">
-            <th class="py-3">کاربر</th>
-            <th class="py-3">فعالیت</th>
-            <th class="py-3">زمان</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="border-b">
-            <td class="py-4">علی احمدی</td>
-            <td class="py-4">سفارش جدید</td>
-            <td class="py-4">۵ دقیقه پیش</td>
-          </tr>
-          <!-- چند ردیف دیگه اضافه کن -->
-        </tbody>
-      </table>
+      <div class="overflow-x-auto">
+        <table class="w-full text-right">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="py-4 px-6">کاربر</th>
+              <th class="py-4 px-6">فعالیت</th>
+              <th class="py-4 px-6">زمان</th>
+              <th class="py-4 px-6">وضعیت</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b hover:bg-gray-50">
+              <td class="py-4 px-6">علی احمدی</td>
+              <td class="py-4 px-6">سفارش جدید #1234</td>
+              <td class="py-4 px-6">۵ دقیقه پیش</td>
+              <td class="py-4 px-6"><span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">تکمیل شده</span></td>
+            </tr>
+            <tr class="border-b hover:bg-gray-50">
+              <td class="py-4 px-6">زهرا رضایی</td>
+              <td class="py-4 px-6">تیکت پشتیبانی</td>
+              <td class="py-4 px-6">۲۰ دقیقه پیش</td>
+              <td class="py-4 px-6"><span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">در حال بررسی</span></td>
+            </tr>
+            <!-- ۳–۴ ردیف دیگه اضافه کن -->
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
