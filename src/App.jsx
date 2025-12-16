@@ -2,6 +2,8 @@ import StatCard from './components/StatCard'
 
 import ActivityTable from './components/ActivityTable'
 
+import IncomeChart from './components/IncomeChart'
+
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-100 p-8">
@@ -16,6 +18,7 @@ function App() {
         <StatCard title="تیکت‌های باز" value="12" color="border-red-600" />
       </div>
       <ActivityTable/>
+      <IncomeChart/>
     </div>
   )
 }
