@@ -37,7 +37,7 @@ const activities = [
 
 function ActivityTable() {
   return (
-    <div className="bg-white rounded-2xl shadow-lg p-8 mt-8">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 mt-8">
       <h2 className="text-2xl font-bold mb-6">آخرین فعالیت‌ها</h2>
       <div className="overflow-x-auto">
         <table className="w-full text-right">
