@@ -1,5 +1,7 @@
 import StatCard from './components/StatCard'
 
+import ActivityTable from './components/ActivityTable'
+
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-100 p-8">
@@ -13,6 +15,7 @@ function App() {
         <StatCard title="درآمد ماه" value="۱۲۳ میلیون" color="border-purple-600" />
         <StatCard title="تیکت‌های باز" value="12" color="border-red-600" />
       </div>
+      <ActivityTable/>
     </div>
   )
 }
